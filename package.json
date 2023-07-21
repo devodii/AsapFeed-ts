@@ -1,0 +1,13 @@
+{
+  "name": "asapfeed",
+  "version": "1.0.0",
+  "description": "A Centralized Feedback Software For Business Administrators",
+  "main": "index.js",
+  "scripts": {
+    "dev": "docker-compose up",
+    "kill": "docker-compose down --remove-orphan"
+  },
+  "keywords": [],
+  "author": "Emmanuel Odii",
+  "license": "ISC"
+}
