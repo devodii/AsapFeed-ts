@@ -13,6 +13,7 @@ module.exports = {
       },
       backgroundColor: {
         "primary-orange": "#f63",
+        "primary-orange-hover": "#f6821f",
         "primary-blue": "#2c51c3",
         "mid-gray": "#f9f8f9",
       },

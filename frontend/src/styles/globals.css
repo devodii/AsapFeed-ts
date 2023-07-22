@@ -19,3 +19,27 @@ body {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, "Helvetica Neue", Arial, sans-serif;
 }
+
+.travel {
+  display: inline-block;
+  position: relative;
+}
+
+.travel::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1.5px;
+  background-color: black;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease-in-out;
+}
+
+.travel:hover::before {
+  transform: scaleX(1);
+}
+
+

@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import { AuthProvider } from "../AuthProvider";
-import { AuthHeader, HomeHeader } from "../Header";
+import { AuthHeader, HomeHeader, } from "../Header";
+import { Footer } from '../index'
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -14,6 +15,7 @@ export const Layout = ({ children }: LayoutProps) => {
       <>
         <HomeHeader />
         <div>{children}</div>
+        <Footer />
       </>
     );
   } else if (["/login", "/signup"].includes(pathname)) {

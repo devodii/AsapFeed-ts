@@ -1,13 +1,9 @@
 import Link from "next/link";
+import { metaBenefits } from "./meta";
 
-const metaBenefits: string[] = [
-  "Gain valuable insights from customer feedback",
-  "Improve customer satisfaction and loyalty",
-  "Make data-driven decisions to grow your business",
-];
 export const Hero = () => {
   return (
-    <section className="flex flex-col gap-4 lg:gap-6">
+    <section className="flex flex-col gap-2 md:gap-3 lg:gap-">
       <div className="max-w-md py-4">
         <h1 className="text-2xl md:text-4xl font-semibold lg:text-6xl">
           Customer feedback made easy
@@ -34,6 +30,9 @@ export const Hero = () => {
       >
         Start listening to customers
       </Link>
+      <span className="-mt-1 text-gray-600 font-medium">
+        Join for free &#183; Upgrade anytime!
+      </span>
     </section>
   );
 };

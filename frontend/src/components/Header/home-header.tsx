@@ -28,9 +28,9 @@ export const HomeHeader = () => {
               <li key={index}>
                 <Link
                   href={each.href}
-                  className="hover:text-thick-blue md:text-lg font-medium tracking-tight hover:underline hover:underline-offset-8"
+                  className="hover:text-thick-blue font-medium tracking-tight hover:underline hover:underline-offset-8 "
                 >
-                  {each.name}
+                  <span className="text-base">{each.name}</span>
                 </Link>
               </li>
             ))}
@@ -39,7 +39,7 @@ export const HomeHeader = () => {
       </div>
 
       <div className="flex gap-2 lg:gap-4 text-thick-blue items-center">
-        <Link href={"/login"} className="font-medium tracking-tight md:text-lg">
+        <Link href={"/login"} className="font-medium tracking-tight">
           Login
         </Link>
         <Link
@@ -47,7 +47,7 @@ export const HomeHeader = () => {
           tabIndex={30}
           className=" font-medium bg-primary-orange text-white md:text-lg px-4 py-2 rounded-lg"
         >
-          <span>Start for free</span>
+          <span className="text-base">Start for free</span>
         </Link>
       </div>
     </header>
