@@ -22,7 +22,7 @@ services:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=rootPasssword
       - POSTGRES_DB=asapfeed
-      - POSTGRES_HOST=localhost
+      - POSTGRES_HOST=db
       - POSTGRES_PORT=5432
 
   backend:

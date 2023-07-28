@@ -21,7 +21,7 @@ async function bootstrap() {
       secret: 'My super secret',
       saveUninitialized: false,
       resave: true,
-      name: 'auth',
+      cookie: { httpOnly: true },
     }),
   );
 

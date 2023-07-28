@@ -1,5 +1,8 @@
-import { Hero, ListenToFriends, SignUpCard } from "@/Components";
-import { Testimonial } from "@/components/testimonial";
+import { Hero } from "@/Components";
+import { Input } from "@/components/form/input";
+import { Label } from "@/components/form/label";
+import { Card } from "@/components/ui/card";
+import { useRef } from "react";
 
 export default function Home() {
   return (
@@ -7,9 +10,10 @@ export default function Home() {
       className={`text-gray-900 flex flex-col min-h-screen container gap-4 md:gap-8 lg:gap-12 mx-auto px-4 md:px-12 lg:px-24 py-6`}
     >
       <Hero />
-      {/* <Testimonial /> */}
-      <ListenToFriends />
-      <SignUpCard />
+      {
+        // eslint-disable-next-line react/no-children-prop
+      }
+     
     </main>
   );
 }

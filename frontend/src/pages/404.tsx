@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
-const FourOhFour = () => {
+const Error = () => {
   return (
-    <div>FourOhFour</div>
-  )
-}
+    <div className="flex justify-center items-center min-h-screen">
+      Error occured
+    </div>
+  );
+};
 
-export default FourOhFour
+export default Error;
